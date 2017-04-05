@@ -44,11 +44,11 @@ class SwiftExampleViewController: UIViewController, LGChatControllerDelegate {
     
     // MARK: LGChatControllerDelegate
     
-    func chatController(chatController: LGChatController, didAddNewMessage message: LGChatMessage) {
+    func chatController(_ chatController: LGChatController, didAddNewMessage message: LGChatMessage) {
         print("Did Add Message: \(message.content)")
     }
     
-    func shouldChatController(chatController: LGChatController, addMessage message: LGChatMessage) -> Bool {
+    func shouldChatController(_ chatController: LGChatController, addMessage message: LGChatMessage) -> Bool {
         /*
         Use this space to prevent sending a message, or to alter a message.  For example, you might want to hold a message until its successfully uploaded to a server.
         */
